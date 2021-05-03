@@ -1,0 +1,32 @@
+sintaxe e comandos básicos
+
+	Documentação oficial 
+	www.php.net
+
+	-> condicionais
+		if, else if, else, switch
+
+	-> Repetição	
+		while, do while, for, foreach
+
+	-> Comparadores
+		==, ===, <,>,<=,>=, !=, !==
+		indentico = verifica o valor e o tipo da variável
+
+	-> Lógicos
+		&&, ||, AND, OR, XOR
+
+	-> Comandos de saída output
+		echo, print, var_dump, print_r
+
+		Dados de formulários
+		$_GET, $_POST
+
+		Sessões (manter um estado enquanto o brownser estiver aberto)
+		$_SESSION
+
+		Arrays (listas ou pilhas)
+
+
+
+		

@@ -1,0 +1,35 @@
+PHP (Hypertext Preprocessor)
+	-> Criando em 1997 para gerenciar scripts e automatizar o processo de trabalho.
+	-> É uma linguagem de script open source de uso geral. 
+	-> Muita usada em desenvolvimento web
+	-> Pode ser embutida em HTML.
+	-> Baseada em REQUESTS(estado do servidor)/RESPONSES (tamanho do Buffer)
+	-> Baseada em scripts
+	-> Server Side (tudo que é processado no back-end)
+	-> Interpretado
+	-> Multi paradigma (suporta uma grande variedade técnica e de paradigmas de programação.)
+	-> em 2021, última versão é a PHP 7.0
+	-> Gerenciada pela empresa Zend
+	-> É um linguagem de back-end
+	-> Não é utilizada como ferramenta de Desing (front-end)
+	-> Tem 50% da web ainda é em PHP
+
+ECOSSISTEMA
+	-> CMS (Sistema para gerenciamento de conteúdo) = Content Management System.
+		-> Wordpress, Drupal, Magento, October
+
+	-> Frameworks
+		-> Ferramentas para desenvolve com PHP
+		-> Exemplos: SYMFONY, ZEND, LARAVEL, CAKE, PHALCON
+
+	-> Ambiente de Desenvolvimento
+			-> Servidor Web = Apache ou Ngnix
+			-> Versão 7.0, procurar sempre a última versão estável
+			-> Pacotes completos: XAMPP ou LAMPP
+
+	-> verificando a versão do php
+	# phpinfo();  -> localhost:8081/info.php
+
+	PSR - sigla para as definições de escrita de código hoje utilizada no PHP
+
+
