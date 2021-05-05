@@ -1,0 +1,24 @@
+-> PROTOCOLO HTTP
+	-> Hipertext Transfer Protocol
+	-> É uma forma de trafegar dados na web
+	-> Usado pois fornece maior segurança e integridade de dados e informações dos usuários do site.
+	-> Resquest e Response
+	-> Métodos/verbos (forma como interagir com cursos na web)
+			GET -> traféga dados do HEADERS da requisição. Usado para mostrar informações.
+			POST -> tragéga dados do BODY da requisição. Usado para salvar algum dado
+			HEAD -> HEAD solicita uma resposta de forma idêntica ao método GET, porém sem conter o corpo da resposta.
+			PUT -> Substitui todas as atuais representações do recurso de destino pela carga de dados da requisição
+			DELETE -> Remove um recurso específico
+			CONNECT -> Estabele um túnel para o servidor identificado pelo recursos de destino
+			OPTIONS -> Descreve as opções de comunicação com o recurso de destino
+			TRACE -> Executa um loop-back com o caminho para o recurso de destino
+			PATCH -> Usado para aplicar modificações parciais em um recurso.
+
+	-> Headers
+		-> No cabeçalho tem toda as informações que o servidor possa identificar 
+				quem está fazendo a requisição, qual o body da requisição, entre outras informações
+		-> O headers também podem assumir o papel de um footer.
+
+	-> Manipulação de formulários com PHP
+		$_GET
+		$_POST
