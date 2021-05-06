@@ -5,6 +5,8 @@ sintaxe e comandos básicos
 
 	-> condicionais
 		if, else if, else, switch
+		Operador ternácio condicao ? true : false
+							condicao ? if : else
 
 	-> Repetição	
 		while, do while, for, foreach
@@ -26,6 +28,14 @@ sintaxe e comandos básicos
 		$_SESSION
 
 		Arrays (listas ou pilhas)
+			array associativo =  associar um valor a uma chave
+			Um array no PHP é na verdade um mapa ordenado
+			Um mapa é um tipo que relaciona valores a chaves
+			Criar um array vazio no PHP, é preciso usar a função construtora $meuArray = array()
+			Podemos criar arrays com dados iguais ou diferentes.
+			Temos três tipos básicos de arrays no php: array numéricos, associativos e multidimensionais.
+
+
 
 	-> Algumas funções básicas de detalhes do php
 		SQL Injection -> citações sobre sintaxe SQL mal intencionadas
@@ -36,7 +46,11 @@ sintaxe e comandos básicos
 		Comando que é utilizado no PHP para não executar mais linhas de código = return;
 		Exemplode uma condicional para contar o tamanho de uma string = if(strlen($nome) < 5)
 		$str = strtoupper($str); print $str; = converter uma string para maisculo
+		session_start(); = comando que inicia uma nova sessão  automaticamente ou resume uma sessão existente
+		função isset() = Verificar se uma variável é existente ou se não possui valor igual a null.
 
+
+	
 
 
 		

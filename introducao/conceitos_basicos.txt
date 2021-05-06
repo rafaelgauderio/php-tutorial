@@ -13,6 +13,7 @@ PHP (Hypertext Preprocessor)
 	-> É um linguagem de back-end
 	-> Não é utilizada como ferramenta de Desing (front-end)
 	-> Tem 50% da web ainda é em PHP
+	-> Sintase muito parecida com PERL e C
 
 ECOSSISTEMA
 	-> CMS (Sistema para gerenciamento de conteúdo) = Content Management System.
