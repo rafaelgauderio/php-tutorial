@@ -2,11 +2,17 @@ sintaxe e comandos básicos
 
 	Documentação oficial 
 	www.php.net
+		Pode ser vários paradigmas: Orientado a objetos, Estruturado, Procedural, Programação Orientada a Aspecto.
+
+	-> Comentários em php
+		/*...*/
+		//
 
 	-> condicionais
 		if, else if, else, switch
-		Operador ternácio condicao ? true : false
+		Operador ternácio 	condicao ? true : false
 							condicao ? if : else
+							(Condição) ? <instruções para verdadeiro> : <instruções para falso>;
 
 	-> Repetição	
 		while, do while, for, foreach

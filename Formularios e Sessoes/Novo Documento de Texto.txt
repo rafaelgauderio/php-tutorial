@@ -1,0 +1,14 @@
+session_start(); = comando que inicia uma nova sessão  automaticamente ou resume uma sessão existente
+
+array associativo =  associar um valor a uma chave
+
+função isset() = Verificar se uma variável é existente ou se não possui valor igual a null.
+
+Array
+	Um array no PHP é na verdade um mapa ordenado
+	Um mapa é um tipo que relaciona valores a chaves
+	Criar um array vazio no PHP, é preciso usar a função construtora $meuArray = array()
+	Podemos criar arrays com dados iguais ou diferentes.
+	temos três tipos básicos de arrays no php: array numéricos, array associativos e array multidimensionais.
+
+	
