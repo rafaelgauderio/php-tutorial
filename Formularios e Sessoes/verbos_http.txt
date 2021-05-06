@@ -2,6 +2,9 @@
 	-> Hipertext Transfer Protocol
 	-> É uma forma de trafegar dados na web
 	-> Usado pois fornece maior segurança e integridade de dados e informações dos usuários do site.
+	-> O hipertexto utiliza de hiperlinks contendo texto.
+	-> O HTTP permite que elementos de rede criem ou melhorem a comunicação entre clientes e servidores.
+
 	-> Resquest e Response
 	-> Métodos/verbos (forma como interagir com cursos na web)
 			GET -> traféga dados do HEADERS da requisição. Usado para mostrar informações.
@@ -17,7 +20,7 @@
 	-> Headers
 		-> No cabeçalho tem toda as informações que o servidor possa identificar 
 				quem está fazendo a requisição, qual o body da requisição, entre outras informações
-		-> O headers também podem assumir o papel de um footer.
+	
 
 	-> Manipulação de formulários com PHP
 		$_GET

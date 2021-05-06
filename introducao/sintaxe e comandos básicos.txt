@@ -27,6 +27,16 @@ sintaxe e comandos básicos
 
 		Arrays (listas ou pilhas)
 
+	-> Algumas funções básicas de detalhes do php
+		SQL Injection -> citações sobre sintaxe SQL mal intencionadas
+		Para escrever um código PHP é necessário começar com <?php, mas não é obrigatório terminar com ?>.
+		Para 'printar' uma mensagem com PHP usa-se o comando echo "Minha Mensagem".
+		As variáveis em PHP começam com o símbolo $.
+		Função no PHP que verifica se uma variável está vazia = empty()
+		Comando que é utilizado no PHP para não executar mais linhas de código = return;
+		Exemplode uma condicional para contar o tamanho de uma string = if(strlen($nome) < 5)
+		$str = strtoupper($str); print $str; = converter uma string para maisculo
+
 
 
 		
