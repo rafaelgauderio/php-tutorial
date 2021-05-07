@@ -31,14 +31,14 @@ else if(strlen($nome) >50) {
 
 }
 
-else if(!is_numeric($idade) || $idade<0 ) {
+else if(!is_numeric($idade)) {
     $_SESSION['messagem-de-erro'] = 'Informe um número inteiro positivo para idade';
     header('location: validando_dados_session.php');
     return;
 
 }
 
-else if($idade<6 || $idade<65 ) {
+else if($idade<6 || $idade>65) {
     $_SESSION['messagem-de-erro'] = 'Só existem categorias para competidores entre 6 e 65 anos';
     header('location: validando_dados_session.php');
     return;

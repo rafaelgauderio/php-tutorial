@@ -1,0 +1,33 @@
+
+-> funções = Blocos de códigos com um objetivo pontual.
+-> declare('strict type=1'); = força uma checagem de tipo mais rígida, sem cast dinâmico
+-> require (); = comando produz um erro fatal e interrompe a execução do código
+-> A assinatura string gettype (mixed var) é da função gettype que retorna o tipo da variável.
+-> O comando ?string permite retorno de uma string ou retorno nulo.
+
+ 	-> Variáveis são containers temporários de dados, que ficam alocados na memória
+		variáveis em PHP são variáveis múltiplas
+		String = uma sequência de caracteres, geralmente utilizada para representar palavras, 
+				frases ou textos, np php vem entre aspas
+
+
+Exemplo de como chamar o index de um array
+<?php  
+
+  $Bar = "rafael";
+  $Foo = "Bar";
+  $World = "Foo";
+  $Hello = "World";
+  $rafael = "Hello";
+
+  $a; //Returns Hello
+  $$a; //Returns World
+  $$$a; //Returns Foo
+  $$$$a; //Returns Bar
+  $$$$$a; //Returns rafael
+
+  $$$$$$a; //Returns Hello
+  $$$$$$$a; //Returns World  
+
+?>
+
