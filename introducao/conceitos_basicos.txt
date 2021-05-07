@@ -1,4 +1,5 @@
 PHP (Hypertext Preprocessor)
+	-> Linguagem de tiparem dinâmica e considerada "fracamente tipada"
 	-> Criando em 1997 para gerenciar scripts e automatizar o processo de trabalho.
 	-> É uma linguagem de script open source de uso geral. 
 	-> Muita usada em desenvolvimento web

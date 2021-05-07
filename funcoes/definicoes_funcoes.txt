@@ -4,6 +4,10 @@
 -> require (); = comando produz um erro fatal e interrompe a execução do código
 -> A assinatura string gettype (mixed var) é da função gettype que retorna o tipo da variável.
 -> O comando ?string permite retorno de uma string ou retorno nulo.
+-> include() = incluir arquivos a partir da pasta raiz do projeto para frente
+			 include é uma função que continua a execução de script, mesmo se a inclusão de arquivo falhar
+			 Recebe um parâmetro que ele vai ser diretamente um arquivo ou um diretório. 
+-> hearder_list() = função em PHP que retorna uma lista de cabeçalhos de resposta enviados ou prontos para serem enviados.
 
  	-> Variáveis são containers temporários de dados, que ficam alocados na memória
 		variáveis em PHP são variáveis múltiplas
