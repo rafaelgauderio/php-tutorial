@@ -1,9 +1,6 @@
-<?php
 <!DOCTYPE html>
 <html> 
-
-echo("<br/>\n");
-
+</br>
 <head>
 	<meta charset="utf-8">
 	<title> Formulário de inscrição </title>
@@ -17,7 +14,7 @@ echo("<br/>\n");
 
 <form action="script.php" method="post">
 	<p> Seu nome:  <input type="text" name="nome" /> </p>
-	<p> Seu Idade:  <input type="text" name="idade" /> </p>
+	<p> Sua idade:  <input type="text" name="idade" /> </p>
 	<p><input type="submit" value="Enviar dados" /> </p>
 </form>
 
@@ -25,4 +22,3 @@ echo("<br/>\n");
 
 </html>
 
-?>
