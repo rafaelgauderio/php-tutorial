@@ -2,7 +2,7 @@
 function validaNome(string $nome) : bool {
 
     if(empty($nome)) {
-        setarMensagemDeErro('O nome não pode ser vazio, favor informar um nome entre 3 e 40 caracteres');
+        setarMensagemErro('O nome não pode ser vazio, favor informar um nome entre 3 e 40 caracteres');
         return false;
     }
     

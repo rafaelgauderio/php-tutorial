@@ -1,37 +1,38 @@
 <?php
 
-function defineCategoriaCompetidor(String, $nome, string $idade) : ?string {
+function defineCategoriaCompetidor(String $nome, string $idade) : ?string {
 
 $categorias = [];
-$categorias = 'infantil';
-$categorias = 'adolescente';
-$categorias = 'adulto';
+$categorias[] = 'infantil';
+$categorias[] = 'adolescente';
+$categorias[] = 'adulto';
 
 if(validaNome($nome) && validaIdade($idade)) {
 
     removerMensagemErro();
-    
+
     if ($idade >=6 && $idade <=12 ) {
-        for($i = 0; $i <=count($categorias); i++) {
-            if ($categorias[$i]='infantil') {
-                setarMensagemSucesso("O nadador " .$nome. " compete na categoria " .strtoupper($categorias[$i]);
+        for($i = 0; $i <=count($categorias); $i++) {
+            if ($categorias[$i]=='infantil') {
+                setarMensagemSucesso("O nadador " .$nome. " compete na categoria " .strtoupper($categorias[$i]) .".");
                 return null;
             }
         }
     }
     
     else if ($idade >=13 && $idade <=17 ) {
-        for($i = 0; $i <=count($categorias); i++) {
-            if ($categorias[$i]='adolescente') {
-                setarMensagemSucesso("O nadador " .$nome. " compete na categoria " .strtoupper($categorias[$i]);
+        for($i = 0; $i <=count($categorias); $i++) {
+            if ($categorias[$i]=='adolescente') {
+                setarMensagemSucesso("O nadador " .$nome. " compete na categoria " .strtoupper($categorias[$i]) . ".");
                 return null;
-        }
-    }
+                    }
+                } 
+            }
     
     else  {
-        for($i = 0; $i <=count($categorias); i++) {
-            if ($categorias[$i]='adulto') {
-                setarMensagemSucesso("O nadador " .$nome. " compete na categoria " .strtoupper($categorias[$i]);
+        for($i = 0; $i <=count($categorias); $i++) {
+            if ($categorias[$i]=='adulto') {
+                setarMensagemSucesso("O nadador " .$nome. " compete na categoria " .strtoupper($categorias[$i]) . ".");
                 return null;
             }
         }
@@ -40,15 +41,12 @@ if(validaNome($nome) && validaIdade($idade)) {
 
 }
 
-else {
-
-    removerMensagemSucesso();
-    return obterMensagemErro();
+    else
+    {
+        removerMensagemSucesso();
+        return obterMensagemErro();
     }
 }
-
-
-?>
 
 
 
