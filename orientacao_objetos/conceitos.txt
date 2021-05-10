@@ -1,0 +1,34 @@
+-> Conceitos de orientação a objetos com php
+
+    -> Indrodução
+        -> Orientação a objetos é um tipo de paradigma de programação
+        -> Maneira de estruturar uma programação
+        -> Vantagem: Enchergar os elementos do projeto como elementos de vida real
+            objetos possuem atributos e ações (métodos). Isso facilita o entendimento
+            da aplicação.
+
+    -> Classes
+        -> Um classe é a representação do Objeto
+        -> A criação de um objeto seria a implementação da sua classe
+        -> Objeto é uma instãncia de Classe
+
+    -> Propriedades
+        -> Sinônimo de atributos
+        -> É tudo as caracterísiticas de um objeto
+        -> Propriedades são variáveis de um objeto, como nome, idade, descricao, etc
+
+    -> Modificadores de Acesso
+        -> É necessário declarar os modificadores de acesso das propriedades (atributos) de 
+                acordo com a visibilidade desejada (public, private, protected)
+                public - visível para todos
+                private - somente visível dentro da própria Classes
+                protected - parecido com o private, ele tem uma exceção. É possivel acessar 
+                    os elementos em subclasses que herdam as propriedade da superclasse (classe pai).       
+
+
+    -> Métodos
+        -> São as ações, funções da Classe 
+        -> Método construtor: Método com a funcionalidade sempre é executada quando instanciamos um instância de classe.
+
+
+
