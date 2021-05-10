@@ -16,37 +16,94 @@ class Contabancaria
         $this->numeroAgencia =$numeroAgencia;
         $this->numeroConta = $numeroConta;
         $this->digitoConta = $digitoConta;
-        $this->saldo = $saldo;        
+        $this->saldo = $saldo;
+      }
+
+
+    public function getBanco() {
+        return $this->banco;
     }
 
+    public function setBanco($banco) {
+        $this->banco=$banco;
+    }
 
+    public function getNomeTitular() {
+        return $this->nomeTitular;
+    }
+
+    public function setNomeTitular($nome) {
+        $this->nomeTitular=$nome;
+    }
+
+    public function getNumeroAgencia() {
+        return $this->numeroAgencia;
+    }
+
+    public function setNumeroAgencia($agencia) {
+        $this->numeroAgencia=$agencia;
+    }
+
+    public function getNumeroConta() {
+        return $this->numeroConta;
+    }
+
+    public function setNumeroConta($conta) {
+        $this->numeroConta=$conta;
+    }
+
+    public function getDigitoConta() {
+        return $this->digitoConta;
+    }
+
+    public function setDigitoConta($digito) {
+        $this->digitoConta=$digito;
+    }
+   
     public function obterSaldo() {
-            return 'Sou o método obtersaldo()' . PHP_EOL;        
+            return 'Seu saldo atual é R$ ' .$this->saldo . PHP_EOL;        
     }
 
+    public function depositar($valor) { 
+        $this->saldo +=$valor;
+        return 'Depósito de R$ ' .$valor . ' realizado com sucesso! ' .PHP_EOL;
+    }
+
+    public function sacar($valor) {
+        $this->saldo -=$valor;
+        return 'Saque de R$ ' . $valor . ' realizado com sucesso!' .PHP_EOL;
+    }
+           
 }
 
 
 $conta = new ContaBancaria();
-$conta->banco='Banco do Brasil';
-$conta->nomeTitular = 'João da Silva';
-$conta->numeroAgencia =  '4569';
-$conta->numeroConta ='23341';
-$conta->digitoConta =8;
-$conta->saldo=6300.50;
 
+$conta->setBanco('Banco Itau');
+$conta->setNomeTitular('Rafael De Luca');
+$conta->setNumeroConta('46578');
+$conta->setNumeroAgencia('0329');
+$conta->setDigitoConta('2');
 
-var_dump($conta->banco);
-echo 'O nome do titular da conta é ' .$conta->nomeTitular. PHP_EOL;
-var_dump($conta->nomeTitular);
-var_dump($conta->numeroAgencia);
-var_dump($conta->numeroConta);
-var_dump($conta->digitoConta);
-var_dump($conta->saldo);
+$conta->depositar(400.00);
 echo $conta->obterSaldo();
 
-//IMPRIMINDO O OBJETO INTEIRO
+echo PHP_EOL;
+echo $conta->depositar(800.50);
+echo $conta->obterSaldo();
+
+echo PHP_EOL;
+echo $conta->depositar(300.75);
+echo $conta->obterSaldo();
+
+echo PHP_EOL;
+echo $conta->sacar(200.15);
+echo $conta->obterSaldo();
+
+//IMPRIMINDO VARIÁVEL CONTA
+echo PHP_EOL;
 var_dump($conta);
+
 
 
 
