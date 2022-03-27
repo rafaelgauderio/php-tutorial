@@ -1,0 +1,51 @@
+<html>
+<body>
+    
+    <form method="post" action="processa.php">
+        <fieldset>
+        	<legend>
+        		Dados do formulário
+        	</legend>
+        	<label>Nome: <input type="text" name="nome" placeholder="Nome" required></label><br>
+        	<label>Senha: <input type="password" name="senha" plac.2eholder="Senha" required></label><br>
+        	<label>Email: <input type="email" name="email" placeholder="Email"></label><br>
+        	<label>Numero: <input type="number" min="1" max="500" step="2" value="18" name="numero"></label><br>
+        	<label>Telefone: <input type="cel" name ="telefone" placeholder="telefone"></label><br>
+        	<label>URL: <input type="url" name="site" list="sites" placeholder="Escolha um dos sites..."></label><br>
+        	<lalel>Altura: <input type="number" name="altura" value="1.80" step="0.01" min="0.20" max="3.99" placeholder="altura" pattern="[0-9]"></lalel><br>
+        	<label>Enviar Formulário <input type="submit" style="text-color"></label>
+        	    <datalist id="sites">
+        	        <option>https://google.com.br</option>
+        	        <option>https://delucahigiene.com.br</option>
+        	        <option>https://ifrs.com.br</option>
+        	    </datalist>
+        	<br>
+        	<label>Busca: <input type="search" name="procurar" placeholder="Faça sua busca..."></label><br>
+        	</fieldset>
+        	<br>
+        	<label>Selecione uma fruta
+        	    <select name="Fruta">
+        	        <option>[SELECIONE UMA OPÇÃO]</option>
+        	        <optGroup label="Doces">
+        	        <option value="bn">Banana</option>
+        	        <option value="mc">Maça</option>
+        	        <option value="berg">Bergamota</option>
+        	        </optGroup>
+        	        <optGroup label="Azedas">
+        	        <option value="am">Ameixa</option>
+        	        <option value="Kiwi">Kiwi</option>
+        	        <option value="Tomate">Tomate</option>
+        	        </optGroup>
+        	   </select>
+        	</label>
+        	<br>
+        	<label>
+        	<h4>Observações</h4>
+        	    <textarea name="observacoes" rows="10" cols="60" placeholder="Observações sobre o sistema..."></textarea>
+        	</label>
+            
+        <br>
+    </form>
+
+</body>
+</html>
