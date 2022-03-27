@@ -1,0 +1,66 @@
+<html>
+<body>
+    
+    <form method="post" action="processa.php">
+        <fieldset>
+            <legend>
+                Dados do formulário
+            </legend>
+            <label>Nome: <input type="text" name="nome"></label><br>
+            <label>Senha: <input type="password" name="senha"></label><br>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>Numero: <input type="number" min="1" max="500" step="2" value="18" name="numero"></label><br>
+            <label>Telefone: <input type="cel" name ="telefone"></label><br>
+            <label>URL: <input type="url" name="site"></label><br>
+            <label>Busca: <input type="search" name="procurar"></label><br>
+            </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Dados Complementares
+            </legend>
+            <label>Deseja receber informações sobre nossas promoções: <input type="checkbox" name="receber" valeu="1"></label><br>
+            Turno:<br>
+           <label>Manhã<input type="radio" name="turno" value="M"></label>
+            <label>Tarde<input type="radio" name="turno" value="T"></label>
+            <label>Noite<input type="radio" name="turno" value="N"></label>
+            <br>Sexo:<br>
+            <label>Masculino: <input type="radio" name="turno" value="F"></label>
+            <label>Feminino<input type="radio" name="turno" value="M"></label>
+        </fieldset>       
+        <br>        
+        <input type="submit" value="Enviar formulário">
+        <br><br>
+        <button>
+            <label>
+            Enviar figura:    
+             <img width="40" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/-589aeb149fa0e.png">
+             </label>
+        </button>
+         <h3>Botão agora é a propria imagem que funciona como submit</h3>
+              <label>
+                  <input type="image" width="50" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/-589aeb149fa0e.png">
+              </label>
+        <br><br>
+        <label>Escolha sua cor favorita: <input type="color"></label>
+        <br><br>
+        <label>Escolha uma faixa de valores (0 - 100 o range): <input type="range" min="0" max="100" step="0.2"></label>
+        <br><br>
+        <label><input type="file" min="0" max="100" step="0.2"><input type="submit"></label>
+        <h3>Informação escondida com hidden</h3>
+        <label><input type="hidden" value=35 name="limite"></label>
+        <br><br>
+        <label>Informe a data: <input type="date"></label>
+        <br><br>
+        <label>Informe a data e hora: <input type="datetime-local"></label>
+        <br><br>
+         <label>Informe horário da consulta: <input type="time"></label>
+        <br><br>
+        <label>Informe a semana: (varia de 1 até 52) <input type="week"></label>
+        <br><br>
+    </form>
+
+</body>
+</html>
+
+
