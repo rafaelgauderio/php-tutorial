@@ -1,0 +1,304 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+ font-family: Arial;
+ background: linear-gradient(to bottom, #d4ff9d 0%, #e1eebe 100%);
+}
+div {
+ margin: 16px;
+ padding: 16px;
+ border:1px solid silver;
+ border-radius: 4px;
+ box-shadow: 1px 1px 1px;
+ background: linear-gradient(to bottom, #00BFFF 0%, #eea 100%);
+}
+xmp {
+ padding: 8px;
+ width: 90%;
+ background-color: #d4ff9d;
+ border-radius: 8px;
+ border:1px solid silver;
+ background: linear-gradient(to bottom, #eea 0%, #00FFFF 100%);    
+}
+pre,xmp {
+    white-space: pre-wrap;       /* CSS 3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+h1 {
+ background-color: #48d1cc;
+ border-radius: 8px;
+ padding: 8px;
+ border:1px solid silver;
+ background: linear-gradient(to bottom, #48d1cc 0%, #00ced1 100%);
+}
+li,td,th {
+ font-size: xx-large;
+}
+td,th {
+ font-size: x-large;
+}
+label {
+ margin: 4px;
+ border: 1px dotted silver;
+ padding: 4px;
+ display: block;
+}
+@media print {
+ html * {
+  background: none;
+  border: 0;
+  box-shadow: none;
+ }
+}
+</style>
+</head> 
+<body>
+<h1>Manual de Formulários</h1>
+
+<div>
+<ul>
+<li>Um formulário é um conjunto de campos, também chamados de controles de entrada.</li>
+<li>Podemos usar esses campos para obter informações do usuário.</li>
+</ul>
+<img src="http://upload.wikimedia.org/wikipedia/commons/3/34/Sample_web_form.png" alt="exemplo de formulário HTML">
+</div>
+
+<div>
+<ul>
+<li>Um formulário é definido pela tag <strong>form</strong> e possui como principais atributos o <strong>method</strong> e o <strong>action</strong>.</li>
+<li>O atributo method determina o método de envio do formulário. Seu valor pode ser GET ou POST.</li>
+<li>O método GET envia os dados via querystring (eles aparecerão na URL após o ?). Deve ser usado quando o envio não provocar nenhuma mudança no lado do servidor (ex.: uma busca / consulta).</li>
+<li>O método POST envia os dados no cabeçalho HTTP da página (invisível). Deve ser usado quando alguma alteração será feita no lado servidor após o envio do formulário (ex.: um cadastro ou uma compra).</li>
+<li>O atributo action define para onde (qual outra página) o formulário será enviado. Esta página de destino é que processará a informação. Para esta parte, é necessário programar do lado do servidor (por exemplo, com PHP).</li>
+</ul>
+<xmp><form method="GET" action="http://www.inf.ufrgs.br/~rcpinto/testador.php"></xmp>
+</div>
+
+<form method="GET" action="http://www.inf.ufrgs.br/~rcpinto/testador.php">
+
+<div>
+<ul>
+<li>Com o formulário aberto, podemos começar a inserir campos. Mas antes disso, podemos inserir a tag <strong>fieldset</strong> para organizar melhor um conjunto de campos.</li>
+<li>Logo após abrir o fieldset, devemos usar a tag <strong>legend</strong> para definir o título deste grupo de campos.</li>
+<li>Fecharemos a tag fieldset ao final do conjunto de campos agrupados.</li>
+</ul>
+<xmp><fieldset><legend>Entrada de Texto</legend></xmp>
+</div>
+
+<div>
+<ul>
+<li>O principal tipo de campo HTML é definido pela tag <strong>input</strong>.</li>
+<li>Ele é um campo de entrada genérico, e seu tipo específico deve ser especificado pelo atributo <strong>type</strong>.</li>
+<li>Existem muitos tipos de input, veremos todos em seguida.</li>
+</ul>
+</div>
+
+<fieldset>
+<legend>Entrada de Texto</legend>
+
+<label>
+input type="text" <input type="text" name="rua" value="Av. Boqueirão">
+<xmp><input type="text" name="rua" value="Av. Boqueirão"></xmp>
+Os atributos mais comuns de inputs são o <strong>name</strong> e o <strong>value</strong> (opcional). É como definir o nome e o valor de uma variável, respectivamente.
+</label>
+
+<label>
+input type="email" <input type="email" name="email"  required>
+<xmp><input type="email" name="email" value="eu@canoas.ifrs.edu.br" required></xmp>
+Aqui também usamos o atributo <strong>required</strong>, introduzido no HTML5. Ele serve para tornar um campo obrigatório, mas não é suportado pela maioria dos navegadores (como a maioria dos campos HTML5 que veremos).
+</label>
+
+<label>
+input type="number" <input type="number" name="idade" value="18">
+<xmp><input type="number" name="idade" value="18"></xmp>
+</label>
+
+<label>
+input type="password" <input type="password" name="senha" value="12345">
+<xmp><input type="password" name="senha" value="12345"></xmp>
+</label>
+
+<label>
+input type="search" <input type="search" name="busca">
+<xmp><input type="search" name="busca"></xmp>
+</label>
+
+<label>
+input type="tel" <input type="tel" name="fone" placeholder="(XX) XXXX-XXXX">
+<xmp><input type="tel" name="fone" placeholder="(XX) XXXX-XXXX"></xmp>
+O atributo <strong>placeholder</strong> permite definir um texto que fica no local de preenchimento até que o usuário digite algo. Pode ser usado para dar um exemplo de como o campo deve ser preenchido.
+</label>
+
+<label>
+input type="url" <input type="url" name="site">
+<xmp><input type="url" name="site"></xmp>
+</label>
+
+<label>
+textarea <textarea name="obs"></textarea>
+<xmp><textarea name="obs"></textarea></xmp>
+Note que este já não é um campo input. Nesse caso usamos a tag <strong>textarea</strong> (que deve ser fechada).
+</label>
+
+<label>input type="text" list="browsers" <input type="text" list="browsers" name="navegador"></label>
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist> 
+<xmp>
+<input type="text" list="browsers" name="navegador">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist> 
+</xmp>
+O atributo <strong>list</strong>, juntamente com as tags <strong>datalist</strong> e <strong>option</strong>, pode ser usado para criar "autocomplete" e dar dicas de valores possíveis para serem preenchidos.
+</fieldset>
+
+<xmp></fieldset></xmp>
+
+<fieldset>
+<legend>Opções</legend>
+
+<label>
+input type="checkbox" a <input type="checkbox" name="op" value="a"></label> <label>b <input type="checkbox" name="op" value="b" checked></label>
+<xmp>a <input type="checkbox" name="op" value="a"> b <input type="checkbox" name="op" value="b" checked></xmp>
+
+
+<label>
+input type="radio" M <input type="radio" name="r1" value="M" checked></label> <label>F <input type="radio" name="r1" value="F"></label>
+<xmp>M <input type="radio" name="r1" value="M" checked> F <input type="radio" name="r1" value="F"></xmp>
+
+
+<label>select 
+<select name="lista">
+<optgroup label="Letras">
+<option value="a">a</option>
+<option value="b">b</option>
+</optgroup>
+<optgroup label="Números">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</optgroup>
+</select></label>
+<xmp>
+<select name="lista">
+<optgroup label="Letras">
+<option value="a">a</option>
+<option value="b">b</option>
+</optgroup>
+<optgroup label="Números">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</optgroup>
+</select>
+</xmp>
+</fieldset>
+
+
+<fieldset>
+<legend>Data e Hora</legend>
+
+<label>
+input type="date" <input type="date" name="datanasc" placeholder="dd/mm/aaaa" size="10">
+<xmp><input type="date" name="datanasc" placeholder="dd/mm/aaaa" size="10"></xmp>
+</label>
+
+<label>
+input type="datetime" <input type="datetime" name="dataehora">
+<xmp><input type="datetime" name="dataehora"></xmp>
+</label>
+
+<label>
+input type="datetime-local" <input type="datetime-local" name="dataehoralocal">
+<xmp><input type="datetime-local" name="dataehoralocal"></xmp>
+</label>
+
+<label>
+input type="week" <input type="week" name="semana">
+<xmp><input type="week" name="semana"></xmp>
+</label>
+
+<label>
+input type="month" <input type="month" name="mes">
+<xmp><input type="month" name="mes"></xmp>
+</label>
+
+<label>
+input type="time" <input type="time" name="hora">
+<xmp><input type="time" name="hora"></xmp>
+</label>
+
+</fieldset>
+
+<fieldset>
+<legend>Outros</legend>
+
+<label>
+input type="button" <input type="button" value="botão">
+<xmp><input type="button" value="botão"></xmp>
+</label>
+
+<label>
+button <button>lalala</button>
+<xmp><button>lalala</button></xmp>
+</label>
+
+<label>
+input type="image" <input type="image" name="botao" value="clicou">
+<xmp><input type="image" name="botao" value="clicou"></xmp>
+</label>
+
+<label>
+input type="color" <input type="color" name="cor">
+<xmp><input type="color" name="cor"></xmp>
+</label>
+
+<label>
+input type="range" <input type="range" name="temperatura" value="20" min="16" max="32">
+<xmp><input type="range" name="temperatura" value="20" min="16" max="32"></xmp>
+</label>
+
+<label>
+input type="file" <input type="file" name="arquivo">
+<xmp><input type="file" name="arquivo"></xmp>
+</label>
+
+<label>
+input type="hidden" <input type="hidden" name="oculto" value="123">
+<xmp><input type="hidden" name="oculto" value="123"></xmp>
+</label>
+
+<label>
+input type="reset" <input type="reset">
+<xmp><input type="reset"></xmp>
+</label>
+
+<label>
+input type="submit" <input type="submit">
+<xmp><input type="submit"></xmp>
+</label>
+
+</fieldset>
+
+
+</form>
+
+<xmp></form></xmp>
+</html>
+
+
