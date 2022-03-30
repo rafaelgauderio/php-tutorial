@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<style>
+
+	body {
+		font-family: Comin Sans MS, Arial;
+		font-size: 20px;
+		
+	}
+
+	h1 {
+		background-color: #48d1cc;
+		border-radius: 10px;
+		padding: 10px;
+		border:1px solid black;
+		background: linear-gradient(to bottom, #48d1cc 0%, #00ced1 100%);
+	}
+
+	form {
+		margin: 10px;
+		padding: 10px;
+		border:1px solid black;
+		border-radius: 5px;
+		background: linear-gradient(to bottom, #eea 0%, #00FFFF 100%);
+		text-indent: ; 
+
+	}
+
+	input {
+		padding: 5px;
+	}
+	
+</style>
+
+<body>
+	<h1>Formulário</h1>
+	<form  method="post" action=acoes.php">
+		<fieldset>
+			<legend>Dados do formulário </legend>
+			<label>Nome: <input name="nome" placeholder="Nome" required><br></label>
+			<label>Email: <input type ="email" name="email" placeholder="E-mail" required><br></label>
+			Sexo:<br>
+			<label>Masculino: <input type="radio" name="sexo" value="M" placeholder="Sexo" required></label>
+			<label>Feminino: <input type="radio" name="sexo" value="M" placeholder="Sexo" required><br></label>
+			<label>Data de Nascimento: <input type="date" name="datanasc" placeholder="data de nascimento" required><br></label>
+			<label>Endereço: <input name="endereco" placeholder="Endereço" required><br></label>
+			<label>Bairro: <input name="bairro" placeholder="Bairro" required><br></label>
+			<label>Estado
+        	    <select name="estado">
+        	        <option>[SELECIONE UMA OPÇÃO]</option>
+        	        <optGroup label="Norte">
+        	        <option value="ac">Acre</option>
+        	        <option value="am">Amazônia</option>
+        	        <option value="ap">Amapá</option>
+        	        <option value="pa">Pará</option>
+        	        <option value="ro">Rondônia</option>
+        	        <option value="to">Tocantins</option>        	        
+        	        </optGroup>
+        	        <optGroup label="Nordeste">
+        	        <option value="am">Ameixa</option>
+        	        <option value="Kiwi">Kiwi</option>
+        	        <option value="Tomate">Tomate</option>
+        	        </optGroup>
+        	        <optGroup label="Centro-Oeste">
+        	        <option value="am">Ameixa</option>
+        	        <option value="Kiwi">Kiwi</option>
+        	        <option value="Tomate">Tomate</option>
+        	        </optGroup>
+        	        <optGroup label="Sudeste">
+        	        <option value="am">Ameixa</option>
+        	        <option value="Kiwi">Kiwi</option>
+        	        <option value="Tomate">Tomate</option>
+        	        </optGroup>
+        	         <optGroup label="Sul">
+        	        <option value="am">Ameixa</option>
+        	        <option value="Kiwi">Kiwi</option>
+        	        <option value="Tomate">Tomate</option>
+        	        </optGroup>
+        	   </select>
+        	</label>
+        	<br>
+
+
+			<label>Cidade: <input name="cidade" placeholder="cidade" required><br></label>
+			<label>Cep: <input name="cep" placeholder="cep" required><br></label>
+			<label>Deseja receber e-mails?: <input type="checkbox" name="receber" required><br></label>
+		</fieldset>
+		<br><br>
+
+		<input type="submit" value="Enviar formulário">
+
+
+
+
+
+
+
+	</form>
+</body>
+</html>
+
+
+
+
+
