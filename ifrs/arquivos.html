@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<head>
+
+<style>
+
+	body {
+		font-family: "Arial Black", "Arial";
+		font-size: 20px;
+		
+	}
+
+	h1 {
+		background-color: #48d1cc;
+		border-radius: 10px;
+		padding: 10px;
+		border:1px solid black;
+		background: linear-gradient(to bottom, #48d1cc 0%, #00ced1 100%);
+	}
+
+	form {
+		margin: 10px;
+		padding: 10px;
+		border:1px solid black;
+		border-radius: 5px;
+		background: linear-gradient(to bottom, #eea 0%, #00FFFF 100%);
+		text-indent: ; 
+
+	}
+
+	input {
+		padding: 5px;
+	}
+	
+</style>
+
+<body>
+	<h1>Upload de Arquivos</h1>
+	<form  enctype="multipart/form-data" method="post" action="upload.php">
+		<fieldset>
+			<legend>Dados do formulário </legend>
+			<label>Arquivo: <input type="file" name="arquivo" placeholder="arquivo" required><br></label>			
+		</fieldset>
+		<br><br>
+		<input type="submit" value="Enviar formulário">
+
+	</form>
+</body>
+</html>
+
+
+
+
+
