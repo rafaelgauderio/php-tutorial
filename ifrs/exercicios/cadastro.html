@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
 
-<style>
+<html lang="pt-br">
+
+<head>
+	<title> Formulario de cadastro </title>
+	<meta charset="utf-8">
+	
+	<style>
 
 	body {
-		font-family: Comin Sans MS, Arial;
-		font-size: 20px;
+		font-family: "Comic Sans MS", "Arial";
+		font-size: 14px;
 		
 	}
 
 	h1 {
+		font-size: 18px;
 		background-color: #48d1cc;
 		border-radius: 10px;
 		padding: 10px;
@@ -23,32 +29,42 @@
 		border:1px solid black;
 		border-radius: 5px;
 		background: linear-gradient(to bottom, #eea 0%, #00FFFF 100%);
-		text-indent: ; 
+		
 
 	}
 
 	input {
 		padding: 5px;
 	}
+
+	label {
+		width:180px;
+		display: inline-block;
+	}
 	
 </style>
+
+	
+</head>
+
+
 
 <body>
 	<h1>Formulário</h1>
 	<form  method="post" action="formulario.php">
 		<fieldset>
 			<legend>Dados do formulário </legend>
-			<label>Nome: <input name="nome" placeholder="Nome" required><br></label>
-			<label>Email: <input type ="email" name="email" placeholder="E-mail" required><br></label>
+			<label>Nome: <input name="nome" placeholder="Nome" required></label><br>
+			<label>Email: <input type ="email" name="email" placeholder="E-mail" required></label><br>
 			Sexo:<br>
-			<label>Masculino: <input type="radio" name="sexo" value="M" placeholder="Sexo" required></label>
-			<label>Feminino: <input type="radio" name="sexo" value="M" placeholder="Sexo" required><br></label>
-			<label>Data de Nascimento: <input type="date" name="datanasc" placeholder="data de nascimento" required><br></label>
-			<label>Endereço: <input name="endereco" placeholder="Endereço" required><br></label>
-			<label>Bairro: <input name="bairro" placeholder="Bairro" required><br></label>
+			<label>Masculino: <input type="radio" name="sexo" value="M" required></label>
+			<label>Feminino: <input type="radio" name="sexo" value="M" required></label><br>
+			<label>Data de Nascimento: <input type="date" name="datanasc" required></label><br>
+			<label>Endereço: <input name="endereco" placeholder="Endereço" required></label><br>
+			<label>Bairro: <input name="bairro" placeholder="Bairro" required></label><br>
 			<label>Estado
         	    <select name="estado">
-        	        <option>[SELECIONE UMA OPÇÃO]</option>
+        	    	<option >[SELECIONE UM ESTADO]</option>
         	        <optGroup label="Norte">
         	        <option value="ac">Acre</option>
         	        <option value="am">Amazônia</option>
@@ -58,35 +74,42 @@
         	        <option value="to">Tocantins</option>        	        
         	        </optGroup>
         	        <optGroup label="Nordeste">
-        	        <option value="am">Ameixa</option>
-        	        <option value="Kiwi">Kiwi</option>
-        	        <option value="Tomate">Tomate</option>
+        	        <option value="al">Alagoas</option>
+        	        <option value="ba">Bahia</option>
+        	        <option value="ce">Ceará</option>
+        	        <option value="ma">Maranhão</option>
+        	        <option value="pi">Piauí</option>
+        	        <option value="pe">Pernambuco</option>
+        	        <option value="pa">Paraíba</option>
+        	        <option value="rn">Rio Grande do Norte</option>
+        	        <option value="se">Sergipe</option>
         	        </optGroup>
         	        <optGroup label="Centro-Oeste">
-        	        <option value="am">Ameixa</option>
-        	        <option value="Kiwi">Kiwi</option>
-        	        <option value="Tomate">Tomate</option>
+        	        <option value="go">Goiais</option>
+        	        <option value="mt">Mato Grosso</option>
+        	        <option value="ms">Mato Grosso do Sul</option>
         	        </optGroup>
         	        <optGroup label="Sudeste">
-        	        <option value="am">Ameixa</option>
-        	        <option value="Kiwi">Kiwi</option>
-        	        <option value="Tomate">Tomate</option>
+        	        <option value="es">Espírito Santo</option>
+        	        <option value="mg">Minas Gerais</option>
+        	        <option value="rj">Rio de Janeiro</option>
+        	        <option value="sp">São Paulo</option>
         	        </optGroup>
         	         <optGroup label="Sul">
-        	        <option value="am">Ameixa</option>
-        	        <option value="Kiwi">Kiwi</option>
-        	        <option value="Tomate">Tomate</option>
+        	        <option value="pr">Paraná</option>
+        	        <option value="rs">Rio Grande do Sul</option>
+        	        <option value="sc">Santa Catarina</option>
         	        </optGroup>
         	   </select>
         	</label>
         	<br>
 
 
-			<label>Cidade: <input name="cidade" placeholder="cidade" required><br></label>
-			<label>Cep: <input name="cep" placeholder="cep" required><br></label>
-			<label>Deseja receber e-mails?: <input type="checkbox" name="receber"><br></label>
+			<label>Cidade: <input name="cidade" placeholder="cidade" required></label><br>
+			<label>Cep: <input name="cep" placeholder="cep" required></label><br>
+			<label>Deseja receber e-mails?: <input type="checkbox" name="receber"></label><br>
 		</fieldset>
-		<br><br>
+		<br>
 
 		<input type="submit" value="Enviar formulário">
 
@@ -99,8 +122,3 @@
 	</form>
 </body>
 </html>
-
-
-
-
-
