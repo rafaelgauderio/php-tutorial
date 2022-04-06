@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title> Upload de arquivos com formulários</title>
+	<meta charset="UTF-8">
+
+	<style>
+
+		body {
+			font-family: "Arial Black", "Arial";
+			font-size: 20px;
+
+		}
+
+		h1 {
+			background-color: #48d1cc;
+			border-radius: 10px;
+			padding: 10px;
+			border:1px solid black;
+			background: linear-gradient(to bottom, #48d1cc 0%, #00ced1 100%);
+		}
+
+		form {
+			margin: 10px;
+			padding: 10px;
+			border:1px solid black;
+			border-radius: 5px;
+			background: linear-gradient(to bottom, #eea 0%, #00FFFF 100%);
+
+
+		}
+
+		label {
+			width:  180px;
+			display: inline-block;
+		}
+
+		input[type="submit"] {
+			color: white;
+			background-color: green;
+			padding: 5px;
+			border:  2px solid black;
+			border-radius: 5px;
+			font-family: "Arial Black";
+			font-size: 20px;
+			transition: transform .5s;
+
+		}
+
+		input[type="submit"]:hover {
+			background-color: #00ced1;
+			transform:  scale(1.25);
+			cursor: pointer;
+
+		}
+
+	</style>
+
+</head>
+
+
+
+<body>
+	<h1>Upload de Arquivos</h1>
+	<form  enctype="multipart/form-data" method="post" action="upload.php">
+		<fieldset>
+			<legend>Dados do formulário </legend>
+			<label>Nome: <input type="text" name="nome" placeholder="Nome" required> </label><br>
+			<label>Foto: <input type="file" name="arquivo" required> </label><br>			
+		</fieldset>
+		<br><br>
+		<input type="submit" value="Enviar">
+
+	</form>
+</body>
+</html>
