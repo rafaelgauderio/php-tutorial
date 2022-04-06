@@ -1,43 +1,20 @@
 <?php
 
-//include ('funcao.php');
-//require('funcao.php');
-//vai chamar o arquivo apenas uma vez, mesma que seja chamado mais de uma vez dentro do arquivo
-require_once('funcao.php');
-require_once('funcao.php');
+if (file_exists('visitantes.txt')==1) {
 
-echo "O quadrado de 9 é: " . quadrado(9) . ".<br><br>";
-
-$txt = file_get_contents('texto.txt');
-echo $txt;
-
-echo "<br><br>Imprimendo arquivo como vetor<br>";
-$array = file('texto.txt');
-print_r($array);
-
-
-echo "<br><br>Imprimindo com foeach<br>";
-foreach($array as $values) {
-	echo $values . '<br>';
+	$arquivo = fopen('visitantes.txt',"r") {
+	$contador=fread($arquivo,50); //arquivo com 50 bytes de tamanho
+	$contador++;
+	$arquivo=fopen("visitantes.txt","w");
+	fwrite($arquivo,$contador);
+	fclose($arquivo);
 }
-
-//file_get_contents() faz tudo que as funções abaixo
-// fopen(), fread(), fwrite(), fprintf(), fclose()
+	echo "<br>Número todal de visitas: " . $contador . "<br." 
 
 
 
-echo "<br>Arquivo existe? " . file_exists('texto2.txt');
-echo "<br>Arquivo existe?" . file_exists('arquivo_inexistente.txt') . "<br>";
 
-echo "<br>Escrita nos arquivos<br>";
-$bytes = file_put_contents('texto2.txt',"Sobrescrever os textos no arquivo\n47");
-if($bytes>0) {
-	echo "Escrito no arquivo com sucesso. Numero de bytes escritos: " . $bytes;
-} else {
-	echo "Falha ao tentar salvar no arquivo";
-}
+
+
 
 ?>
-
-
-
