@@ -8,9 +8,6 @@ if(!$_SESSION['login']) {
 
 ?>
 
-
 Usuário logado, <?=@$_SESSION['login']?><br>
-
-
 
 <a href="logout.php">Logout</a>
