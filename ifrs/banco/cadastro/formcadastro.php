@@ -63,7 +63,8 @@
 
 <?php
 
-if(isset($_REQUEST['msg'])) {
+if(isset($_REQUEST['msg'])) {	
+	$msg= filter_var($_REQUEST['msg'], FILTER_SANITIZE_STRING);
 	echo $_REQUEST['msg'];
 }
 
