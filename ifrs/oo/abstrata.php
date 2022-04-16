@@ -3,7 +3,7 @@
 // Se a classe tiver um método abstrato a classe já não pode ser instanciada
 // interface seria uma classe abstrata onde todos os métodos são abstratos (sem implementação na interface)
 //implementacao apenas na classe que implements a interface
-abstract class pai {
+abstract class Pai {
 
     protected $x = (7+3); // protected se propaga para a classe herdada
     private $y=17; //só acessível na classe
@@ -22,7 +22,7 @@ abstract class pai {
     abstract function imprimeOi ();
 }
 
-class filho extends pai {
+class Filho extends Pai {
 
  function testarFuncAbstrata() {
     $local = 15;

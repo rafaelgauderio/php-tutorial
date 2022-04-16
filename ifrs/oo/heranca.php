@@ -1,6 +1,6 @@
 <?php
 
-class pai {
+class Pai {
 
     protected $x = (7+3); // protected se propaga para a classe herdada
     private $y=17; //só acessível na classe
@@ -23,7 +23,7 @@ class pai {
     }
 }
 
-class filho extends pai {
+class Filho extends Pai {
 
     public function mostra() {
         echo "<br>Filho, mostra: " . $this->x;
@@ -31,8 +31,8 @@ class filho extends pai {
     }
 }
 
-$objetoA = new pai();
-$objetoB = new filho;
+$objetoA = new Pai();
+$objetoB = new Filho;
 
 //Não dá pra acessar o método protected mostraX() de fora, só dentro da classe herdada filho ou dentro da classe pai
 //$objetoB->mostraX();
